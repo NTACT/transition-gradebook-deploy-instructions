@@ -6,4 +6,6 @@
 
 3. Enter a unique name for your Transition Gradebook instance
 
+![Heroku deploy page with name input and deploy button](/images/heroku_deploy_page.png)
+
 4. Click the "Deploy app" button
