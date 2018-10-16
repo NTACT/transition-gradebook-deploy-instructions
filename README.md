@@ -34,6 +34,6 @@ Once the deployment finishes, your app should be accessable at https://YOUR_APP_
 * `EMAIL_FROM` - The "from" field used for outgoing emails (ex. `Transition Gradebook <tgb-noreply@yourschool.com>`) defaults to the value of `EMAIL_ADDRESS`
 * `EMAIL_HOST` - The SMTP server to use (defaults to `smtp.gmail.com`)
 * `EMAIL_PORT` - The email server port (defaults to `465`)
-* `SITE_URL` - The app domain that Heroku created for your app (https://my-school-transition-gradebook.herokuapp.com/)
+* `SITE_URL` - The app domain that Heroku created for your app (ex. https://my-school-transition-gradebook.herokuapp.com/)
 
 Note: The app will still run without configuring these email variables, but the password reset functionality will not work.
