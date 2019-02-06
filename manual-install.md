@@ -43,7 +43,7 @@ createdb $USER
  **8.** Set your PostgreSQL role password.
 
 ```
-psql -c "ALTER USER \"$USER\" PASSWORD ‘your-password-goes-here’"
+psql -c "ALTER USER \"$USER\" WITH PASSWORD ‘your-password-goes-here’"
 ```
 
  **9.** Create the transition gradebook database
