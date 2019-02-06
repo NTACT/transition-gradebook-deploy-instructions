@@ -19,13 +19,13 @@ echo "export NODE_ENV=production" >> ~/.bashrc
 source ~/.bashrc
 ```
 
- **5.** Install Git, CURL, and PostgreSQL on your server.
+ **5.** If they are not already installed, install Git, CURL, and PostgreSQL on your server.
 
 ```
 sudo apt install git curl postgresql postgresql-contrib
 ```
 
- **6.** Install Node and NPM on your server (v7.2.0 or higher).
+ **6.** If they are not already installed, install Node and NPM on your server (v7.2.0 or higher).
 
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
