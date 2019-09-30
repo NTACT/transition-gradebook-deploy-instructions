@@ -95,3 +95,9 @@ npm install --global forever
  ```
  forever start index.js
  ```
+ 
+ **15.** If the PORT environment variable is set to 8080 as in the example, the app will be accessed at http://localhost:8080/. If everything seems to start correctly but you are still having issues accessing the app, you can check the logs.
+  
+ ```
+ forever logs
+ ```
