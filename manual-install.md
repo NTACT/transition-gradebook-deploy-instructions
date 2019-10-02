@@ -96,8 +96,24 @@ npm install --global forever
  forever start index.js
  ```
  
- **15.** If the PORT environment variable is set to 8080 as in the example, the app will be accessed at http://localhost:8080/. If everything seems to start correctly but you are still having issues accessing the app, you can check the logs.
+ **15.** If the PORT environment variable is set to 8080 as in the example, the app can be accessed at http://localhost:8080/. If everything seems to start correctly but you are still having issues accessing the app, you can check the logs.
   
  ```
  forever logs
  ```
+ 
+ **16.** If you'd like your app to be accessed by the public at a specific domain, you will need to purchase a domain name and set the DNS to point to the static IP address of the server the app is installed on. 
+ 
+ **17.** Once the DNS is in place, you will need to use a web server such as Apache or Nginx to forward all traffic at port 80 to the port the app is served on (8080 by default). Here is an example of what that might look like using Apache, with a domain name of example.com.
+ 
+ ```
+ <VirtualHost *:80> 
+  ProxyPreserveHost On
+  ProxyRequests Off
+  ServerName www.example.com
+  ServerAlias example.com
+  ProxyPass / http://localhost:8080/
+  ProxyPassReverse / http://localhost:8080/
+</VirtualHost> 
+ ```
+ 
