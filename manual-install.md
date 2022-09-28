@@ -53,6 +53,7 @@ createdb transition_gradebook
 ```
 echo "export DATABASE_URL=postgres://$USER:DB-PASSWORD@localhost:5432/transition_gradebook" >> ~/.bashrc
 echo "export PORT=8080" >> ~/.bashrc
+echo "export SECRET=YOUR_SECRET_GOES_HERE" >> ~/.bashrc
 echo "export SITE_URL=https://your-domain-goes-here.com/" >> ~/.bashrc
 echo "export EMAIL_ADDRESS=YOUR-TGB-ADMIN-EMAIL@gmail.com" >> ~/.bashrc
 echo "export EMAIL_PASSWORD=YOUR-TGB-ADMIN-EMAIL-PASSWORD" >> ~/.bashrc
